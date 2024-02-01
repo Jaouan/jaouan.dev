@@ -191,7 +191,6 @@
 
     --hero-sticky-font-size: var(--font-size-s);
   }
-
 }
 
 /* Bug on iOS + Chrome, displaying safe marfin in landscape mode... */

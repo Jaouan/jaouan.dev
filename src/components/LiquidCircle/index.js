@@ -1,4 +1,4 @@
-import './LiquidCircle.css'
+import "./LiquidCircle.css";
 
 /*
 class LiquidCircleElement extends HTMLElement { }

@@ -41,7 +41,8 @@
 }
 
 @define-mixin animation-properties $name, $delay {
-  animation: liquid 20s linear infinite alternate,
+  animation:
+    liquid 20s linear infinite alternate,
     object-wrapper 1000ms linear forwards $delay;
   .project__picture-wrapper {
     animation: $name 1000ms ease-out forwards $delay;
