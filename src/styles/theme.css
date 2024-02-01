@@ -61,7 +61,7 @@
   --project-sub-font-size: var(--font-size-s);
   --project-sub-font-weight: var(--font-weight-light);
   --project-picture-size: 150px;
-  --project-picture-margin: 0;
+  --project-picture-margin: 20px; /* picture translates to 15px */
   --project-name-text-align: start;
   --project-name-even-text-align: end;
   --project-sub-text-align: start;
@@ -179,7 +179,7 @@
     --project-detail-margin: 0px;
     --project-flex-direction: column;
     --project-even-flex-direction: column;
-    --project-picture-margin: var(--space-m);
+    --project-picture-margin: var(--space-s);
     --project-name-text-align: center;
     --project-name-even-text-align: center;
     --project-sub-text-align: justify;
