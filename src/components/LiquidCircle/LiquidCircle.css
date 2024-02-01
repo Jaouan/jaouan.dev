@@ -3,6 +3,9 @@ liquid-circle {
   border-radius: 50%;
   box-shadow: var(--liquid-circle-shadow);
   animation: liquid 20s linear infinite alternate;
+  &:hover {
+    animation: liquid 5s linear infinite;
+  }
 }
 
 @keyframes liquid {
