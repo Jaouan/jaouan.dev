@@ -1,0 +1,44 @@
+sinusoid-background {
+ /* &.ready .sinusoid-background__sinusoid {
+    opacity: 1;
+  }*/
+
+  .sinusoid-background__sinusoid {
+    overflow: visible;
+    user-select: none;
+    transform: rotate(180deg);
+    pointer-select: none;
+
+    transition: opacity 0.25s ease-in-out;
+    /*opacity: 0;*/
+
+    path {
+      stroke: var(--sinusoid-color);
+      fill: none;
+      stroke-linecap: round;
+      stroke-width: var(--sinusoid-stroke-width);
+    }
+  }
+
+  .sinusoid-background__overlay {
+    display: grid;
+    align-items: start;
+    align-content: stretch;
+    justify-items: stretch;
+    align-content: space-between;
+
+    & > * {
+      grid-column: 1;
+      grid-row: 1;
+      justify-self: center;
+      align-self: center;
+      z-index: 1;
+    }
+    & > *:first-child {
+      z-index: 0;
+      /* position: absolute; */
+      width: 100%;
+      text-align: center;
+    }
+  }
+}

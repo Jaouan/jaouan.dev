@@ -1,0 +1,154 @@
+@import "./_glassmorphism.css";
+
+.is-visible {
+  .hero--sticky {
+    top: -200px;
+    opacity: 0;
+    user-select: none;
+    pointer-events: none;
+    user-select: initial;
+    pointer-events: initial;
+  }
+}
+
+.hero--sticky {
+  @mixin glassEffect;
+  backdrop-filter: var(--hero-sticky-blur);
+  -webkit-backdrop-filter: var(--hero-sticky-blur);
+
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  right: 0;
+  top: 0;
+  opacity: 1;
+  overflow: hidden;
+
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  flex-direction: row;
+
+  padding: var(--hero-sticky-padding);
+  margin: var(--hero-sticky-margin);
+
+  .hero__me {
+    flex-wrap: nowrap;
+    text-align: start;
+  }
+  .hero__identity {
+    order: 1;
+    flex-wrap: nowrap;
+    margin-left: var(--space-xs);
+    margin-right: initial;
+    font-size: var(--hero-sticky-font-size);
+  }
+  .hero__job {
+    flex-wrap: nowrap;
+    font-size: var(--hero-sticky-font-size);
+  }
+  .hero__picture {
+    order: 0;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-self: center;
+    width: var(--hero-sticky-picture-size);
+    height: var(--hero-sticky-picture-size);
+  }
+  .hero__cat {
+    flex-wrap: nowrap;
+    margin-top: 0px;
+  }
+  .hero__btn.hero__btn--tiny-mail {
+    display: var(--hero-sticky-btn-tiny-mail-display);
+  }
+  .hero__btn.hero__btn--linkedin {
+    display: var(--hero-sticky-btn-linkedin-display);
+  }
+  .hero__btn.hero__btn--github {
+    display: var(--hero-sticky-btn-github-display);
+  }
+  .hero__btn-wrapper--mail {
+    display: var(--hero-sticky-btn-mail-display);
+  }
+}
+
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+
+  max-width: var(--main-width);
+
+  margin: auto;
+  padding: var(--hero-padding);
+}
+
+.hero__cat {
+  margin-top: var(--space-m);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.hero__picture {
+  align-self: flex-end;
+  background-color: var(--hero-picture-background);
+  background-image: url("/pp-3d.webp");
+  background-size: cover;
+  background-position: center;
+  width: var(--hero-picture-size);
+  height: var(--hero-picture-size);
+}
+
+.hero__me {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero__identity {
+  font-weight: var(--hero-identity-font-weight);
+  font-size: var(--hero-identity-font-size);
+  margin: 0 var(--space-s);
+}
+
+.hero__job {
+  font-weight: var(--hero-job-font-weight);
+  font-size: var(--hero-job-font-size);
+}
+
+.hero__btn-wrapper--mail {
+  display: var(--hero-btn-mail-display);
+  width: var(--hero-btn-mail-wrapper-width);
+  display: flex;
+  justify-content: center;
+}
+
+.hero__btn {
+  align-self: center;
+  font-weight: var(--font-weight-bold);
+  img {
+    vertical-align: middle;
+    margin-bottom: var(--hero-btn-icon-offset-y);
+  }
+  &.hero__btn--tiny-mail {
+    display: none;
+    span {
+      font-weight: var(--font-weight-semibold);
+      font-size: var(--font-size-xl);
+    }
+  }
+  &.hero__btn--mail {
+    font-size: var(--font-size-sm);
+  }
+  &.hero__btn--linkedin img {
+    height: var(--hero-btn-linkedin-size);
+  }
+  &.hero__btn--github img {
+    height: var(--hero-btn-github-size);
+  }
+}

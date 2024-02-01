@@ -1,0 +1,52 @@
+liquid-circle {
+  display: inline-block;
+  border-radius: 50%;
+  box-shadow: var(--liquid-circle-shadow);
+  animation: liquid 20s linear infinite alternate;
+}
+
+@keyframes liquid {
+  0%,
+  100% {
+    border-radius: 60% 40% 50% 50% / 60% 50% 50% 40%;
+  }
+  7% {
+    border-radius: 55% 45% 52% 48% / 55% 52% 48% 45%;
+  }
+  14% {
+    border-radius: 50% 50% 55% 45% / 50% 55% 45% 50%;
+  }
+  21% {
+    border-radius: 55% 45% 50% 50% / 55% 50% 50% 45%;
+  }
+  28% {
+    border-radius: 60% 40% 45% 55% / 60% 45% 55% 40%;
+  }
+  35% {
+    border-radius: 65% 35% 50% 50% / 65% 50% 50% 35%;
+  }
+  42% {
+    border-radius: 60% 40% 55% 45% / 60% 55% 45% 40%;
+  }
+  49% {
+    border-radius: 55% 45% 60% 40% / 55% 60% 40% 45%;
+  }
+  56% {
+    border-radius: 50% 50% 65% 35% / 50% 65% 35% 50%;
+  }
+  63% {
+    border-radius: 55% 45% 60% 40% / 55% 60% 40% 45%;
+  }
+  70% {
+    border-radius: 60% 40% 55% 45% / 60% 55% 45% 40%;
+  }
+  77% {
+    border-radius: 65% 35% 50% 50% / 65% 50% 50% 35%;
+  }
+  84% {
+    border-radius: 60% 40% 45% 55% / 60% 45% 55% 40%;
+  }
+  91% {
+    border-radius: 55% 45% 50% 50% / 55% 50% 50% 45%;
+  }
+}

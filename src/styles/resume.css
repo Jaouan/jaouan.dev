@@ -1,0 +1,20 @@
+.resume {
+  text-align: center;
+  padding: var(--space-s);
+  margin-top: 0;
+  a {
+    font-size: var(--font-size-xxl);
+    color: white;
+    text-decoration: none;
+    .link__arrow {
+      margin-left: var(--space-xs);
+      transition: margin-left 0.2s ease-in-out;
+    }
+    &:hover {
+      opacity: var(--link-hover-opacity);
+      .link__arrow {
+        margin-left: var(--space-s);
+      }
+    }
+  }
+}

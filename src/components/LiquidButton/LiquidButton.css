@@ -1,0 +1,29 @@
+.liquid-button-wrapper {
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-content: center;
+  align-items: center;
+  justify-items: center;
+
+  a {
+    user-select: none;
+    width: 100%;
+    color: var(--foreground);
+    text-align: center;
+    text-decoration: none;
+    transition: opacity 0.2s ease-in-out;
+    color: initial;
+    &:hover,
+    &:focus,
+    &:active {
+      opacity: var(--link-hover-opacity);
+      text-decoration: none;
+    }
+  }
+}
+
+.liquid-button-wrapper * {
+  grid-column: 1;
+  grid-row: 1;
+}

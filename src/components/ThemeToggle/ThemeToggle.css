@@ -1,0 +1,25 @@
+button {
+  position: absolute;
+  right: var(--space-xs);
+  top: var(--space-xs);
+
+  width: calc(var(--font-size-m) * 1.5);
+  height: calc(var(--font-size-m) * 1.5);
+
+  background: none;
+  border: none;
+
+  font-size: var(--font-size-m);
+  text-align: center;
+  cursor: pointer;
+
+  transition: opacity 0.2s ease-in-out;
+  &:hover,
+  &:active {
+    opacity: 0.8;
+  }
+
+  &::before {
+    content: var(--theme-toggle-text);
+  }
+}

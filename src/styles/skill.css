@@ -1,0 +1,52 @@
+@import "./_glassmorphism.css";
+
+.skills {
+  .sinusoid-background__sinusoid {
+    transform: var(--skills-sinusoid-transform);
+  }
+
+  .skills__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    margin: auto;
+    max-width: var(--main-width);
+
+    & > *:hover {
+      z-index: 1;
+      transform: var(--skill-hover-scale);
+      backdrop-filter: var(--skill-hover-blur);
+      -webkit-backdrop-filter: var(--skill-hover-blur);
+    }
+    & > * {
+      @mixin glassEffect;
+      transition: var(--skill-hover-transition);
+
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+
+      text-align: center;
+      font-weight: var(--skill-font-weight);
+
+      margin: var(--skill-margin);
+      padding: var(--skill-padding);
+
+      min-width: var(--skill-width);
+      max-width: var(--skill-width);
+      height: var(--skill-height);
+
+      *:first-child {
+        font-size: var(--skill-kpi-font-size);
+        font-weight: var(--skill-kpi-font-weight);
+      }
+      *:last-child {
+        font-size: var(--skill-technology-font-size);
+        font-weight: var(--skill-technology-font-weight);
+      }
+    }
+  }
+}
