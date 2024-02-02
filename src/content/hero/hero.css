@@ -134,9 +134,12 @@
   background: var(--hero-fullstack-background);
   border-radius: var(--hero-fullstack-border-radius);
   padding: var(--hero-fullstack-padding);
+  &::before {
+    display: var(--hero-fullstack-tooltip-display);
+  }
 }
 [data-tooltip] {
-  cursor: help;
+  cursor: var(--hero-fullstack-cursor);
   position: relative;
   display: inline-block;
 

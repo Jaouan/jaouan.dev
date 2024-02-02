@@ -37,6 +37,8 @@
   --hero-fullstack-background: #ffffff66;
   --hero-fullstack-padding: 0 var(--space-xxs);
   --hero-fullstack-border-radius: 5px;
+  --hero-fullstack-tooltip-display: initial;
+  --hero-fullstack-cursor: help;
   --hero-btn-icon-offset-y: 5px;
   --hero-btn-linkedin-size: 20px;
   --hero-btn-github-size: 35px;
@@ -89,6 +91,7 @@
     var(--space-xxs);
   --skill-margin: var(--space-xs);
   --skills-sinusoid-transform: rotate(45deg);
+  --skill-picture-size: 90px;
 
   /* Tags */
   --tags-justify-content: flex-start;
@@ -195,6 +198,14 @@
 
     --tags-justify-content: center;
     --tags-even-justify-content: center;
+  }
+}
+
+@media (max-width: 550px) {
+  :root {
+    --hero-fullstack-tooltip-display: none;
+    --hero-fullstack-background: none;
+    --hero-fullstack-cursor: initial;
   }
 }
 

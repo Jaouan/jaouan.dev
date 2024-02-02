@@ -1,4 +1,4 @@
 import "./hero";
-import "./skills";
+import "./skills-xp";
 import "./projects";
 import "./resume";

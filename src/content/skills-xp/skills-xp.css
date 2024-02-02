@@ -39,6 +39,11 @@
       max-width: var(--skill-width);
       height: var(--skill-height);
 
+      img {
+        user-select: none;
+        width: var(--skill-picture-size);
+        height: var(--skill-picture-size);
+      }
       *:first-child {
         font-size: var(--skill-kpi-font-size);
         font-weight: var(--skill-kpi-font-weight);
