@@ -47,6 +47,9 @@
     flex-wrap: nowrap;
     font-size: var(--hero-sticky-font-size);
   }
+  .hero__fullstack {
+    display: none;
+  }
   .hero__picture {
     order: 0;
     flex-wrap: nowrap;
@@ -119,6 +122,38 @@
 .hero__job {
   font-weight: var(--hero-job-font-weight);
   font-size: var(--hero-job-font-size);
+}
+
+.hero__fullstack {
+  background: var(--hero-fullstack-background);
+  border-radius: var(--hero-fullstack-border-radius);
+  padding: var(--hero-fullstack-padding);
+}
+[data-tooltip] {
+  cursor: help;
+  position: relative;
+  display: inline-block;
+
+  &::before {
+    font-size: var(--font-size-s);
+    content: attr(data-tooltip);
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    visibility: hidden;
+    opacity: 0;
+    text-align: center;
+    transition:
+      opacity 0.3s,
+      visibility 0.3s;
+  }
+
+  &:hover::before {
+    visibility: visible;
+    opacity: 1;
+  }
 }
 
 .hero__btn-wrapper--mail {

@@ -33,6 +33,10 @@
   --hero-identity-font-weight: var(--font-weight-bold);
   --hero-job-font-size: var(--font-size-l);
   --hero-job-font-weight: var(--font-weight-light);
+  --hero-fullstack-font-size: var(--font-size-s);
+  --hero-fullstack-background: #FFFFFF66;
+  --hero-fullstack-padding: 0 var(--space-xxs);
+  --hero-fullstack-border-radius: 5px;
   --hero-btn-icon-offset-y: 5px;
   --hero-btn-linkedin-size: 20px;
   --hero-btn-github-size: 35px;
@@ -141,6 +145,7 @@
   --sinusoid-color: hsl(160, 41%, 16%);
 
   --hero-picture-background: rgb(0, 45, 52);
+  --hero-fullstack-background: var(--sinusoid-color);
 
   --tag-background-color: hsl(160, 41%, 35%);
   --tag-role-background-color: #914011;
