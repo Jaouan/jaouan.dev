@@ -34,7 +34,7 @@
   --hero-job-font-size: var(--font-size-l);
   --hero-job-font-weight: var(--font-weight-light);
   --hero-fullstack-font-size: var(--font-size-s);
-  --hero-fullstack-background: #FFFFFF66;
+  --hero-fullstack-background: #ffffff66;
   --hero-fullstack-padding: 0 var(--space-xxs);
   --hero-fullstack-border-radius: 5px;
   --hero-btn-icon-offset-y: 5px;
@@ -44,6 +44,7 @@
 
   /* Hero Sticky */
   --hero-sticky-font-size: var(--font-size-m);
+  --hero-sticky-job-font-size: var(--font-size-sm);
   --hero-sticky-blur: blur(12px);
   --hero-sticky-picture-size: 75px;
   --hero-sticky-padding: 0px 0px 0px var(--space-xs);
@@ -52,6 +53,7 @@
   --hero-sticky-btn-mail-display: initial;
   --hero-sticky-btn-linkedin-display: initial;
   --hero-sticky-btn-github-display: initial;
+  --hero-sticky-fullstack-display: initial;
 
   /* Projects */
   --project-background-color-rocket: rgb(35, 35, 59);
@@ -158,13 +160,13 @@
   --background-primary: var(--light-background-primary);
 }
 
-@media (max-width: 750px) {
+@media (max-width: 800px) {
   :root {
-    --hero-sticky-font-size: var(--font-size-sm);
+    --hero-sticky-fullstack-display: none;
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 730px) {
   :root {
     --body-padding: var(--space-s) var(--space-s);
     --section-margin-top: var(--space-l);
@@ -172,11 +174,12 @@
     --hero-padding: 0;
     --hero-btn-mail-wrapper-width: 100%;
 
-    --hero-sticky-font-size: var(--font-size-s);
     --hero-sticky-btn-tiny-mail-display: initial;
     --hero-sticky-btn-mail-display: none;
     --hero-sticky-btn-linkedin-display: none;
     --hero-sticky-btn-github-display: none;
+    --hero-sticky-job-font-size: var(--font-size-s);
+    --hero-sticky-fullstack-display: none;
 
     --skills-sinusoid-transform: rotate(180deg);
 

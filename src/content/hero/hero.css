@@ -45,10 +45,16 @@
   }
   .hero__job {
     flex-wrap: nowrap;
-    font-size: var(--hero-sticky-font-size);
+    font-size: var(--hero-sticky-job-font-size);
   }
   .hero__fullstack {
-    display: none;
+    display: var(--hero-sticky-fullstack-display);
+    background: none;
+    padding: 0;
+    cursor: initial;
+    &::before {
+      display: none;
+    }
   }
   .hero__picture {
     order: 0;
