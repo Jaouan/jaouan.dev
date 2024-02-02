@@ -10,9 +10,10 @@ sinusoid-background {
     pointer-select: none;
 
     transition: opacity 0.25s ease-in-out;
-    /*opacity: 0;*/
 
     path {
+      transition: opacity 0.25s ease-in-out;
+      opacity: 0;
       stroke: var(--sinusoid-color);
       fill: none;
       stroke-linecap: round;

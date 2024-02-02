@@ -5,7 +5,7 @@
   }
   100% {
     opacity: 1;
-    transform: scale(1) translateX(105px) translateY(10px) rotate(45deg);
+    transform: scale(0.9) translateX(100px) translateY(20px) rotate(45deg);
   }
 }
 @keyframes bag {
@@ -47,7 +47,7 @@
   0% {
     overflow: hidden;
   }
-  55% {
+  60% {
     overflow: hidden;
   }
   100% {
@@ -100,13 +100,13 @@
   }
   .already-been-visible {
     .project__picture--website {
-      @mixin animation-properties object-wrapper, website, 400ms;
+      @mixin animation-properties object-wrapper, website, 200ms;
     }
     .project__picture--rocket {
-      @mixin animation-properties object-wrapper--rocket, rocket, 400ms;
+      @mixin animation-properties object-wrapper--rocket, rocket, 200ms;
     }
     .project__picture--bag {
-      @mixin animation-properties object-wrapper, bag, 400ms;
+      @mixin animation-properties object-wrapper, bag, 200ms;
     }
   }
 
