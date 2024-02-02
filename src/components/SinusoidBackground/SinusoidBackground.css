@@ -1,7 +1,16 @@
-sinusoid-background {
-  /* &.ready .sinusoid-background__sinusoid {
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
     opacity: 1;
-  }*/
+  }
+}
+
+sinusoid-background {
+  &.ready .sinusoid-background__sinusoid {
+    animation: fadeIn 0.25s ease-in-out forwards;
+  }
 
   .sinusoid-background__sinusoid {
     overflow: visible;
@@ -9,10 +18,7 @@ sinusoid-background {
     transform: rotate(180deg);
     pointer-select: none;
 
-    transition: opacity 0.25s ease-in-out;
-
     path {
-      transition: opacity 0.25s ease-in-out;
       opacity: 0;
       stroke: var(--sinusoid-color);
       fill: none;

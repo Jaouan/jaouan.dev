@@ -1,5 +1,5 @@
 export class ResizeObserverDebounced {
-  constructor({ resizingCallback, resizedCallback }, delay = 500) {
+  constructor({ resizingCallback, resizedCallback }, delay = 100) {
     this.timeoutId = null;
     this.resizeObserver = new ResizeObserver((entries) => {
       this.timeoutId === null
