@@ -28,6 +28,8 @@ class LiquidButtonElement extends HTMLElement {
     const aElement = document.createElement("a");
     aElement.href = this.getAttribute("href") || "#";
     aElement.style.lineHeight = svgElement.dataset.height + "px";
+    aElement.style.textDecoration = "none";
+    aElement.style.color = this.getAttribute("data-text-color") || "black";
     if (this.hasAttribute("x-scroll-to-top")) {
       aElement.onclick = (e) => {
         e.preventDefault();

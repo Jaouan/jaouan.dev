@@ -13,7 +13,6 @@
     text-align: center;
     text-decoration: none;
     transition: opacity 0.2s ease-in-out;
-    color: initial;
     &:hover,
     &:focus,
     &:active {
