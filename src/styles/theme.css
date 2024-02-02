@@ -61,7 +61,7 @@
   --project-sub-font-size: var(--font-size-s);
   --project-sub-font-weight: var(--font-weight-light);
   --project-picture-size: 150px;
-  --project-picture-margin: 20px; /* picture translates to 15px */
+  --project-picture-margin: 23px; /* picture translates */
   --project-name-text-align: start;
   --project-name-even-text-align: end;
   --project-sub-text-align: start;

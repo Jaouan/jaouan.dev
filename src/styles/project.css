@@ -75,6 +75,9 @@
     .project__sub {
       text-align: var(--project-sub-even-text-align);
     }
+    .project__picture {
+      margin: var(--project-picture-margin);
+    }
     .tags {
       justify-content: var(--tags-even-justify-content);
     }
@@ -115,7 +118,7 @@
     width: var(--project-picture-size);
     height: var(--project-picture-size);
 
-    margin: var(--project-picture-margin);
+    margin: var(--project-picture-margin) var(--project-picture-margin) var(--project-picture-margin) calc(var(--project-picture-margin) * 2);
 
     img {
       position: absolute;
