@@ -16,7 +16,7 @@ class VisibilityAware extends HTMLElement {
             : this.classList.remove(animationCssClass);
         });
       },
-      { root: null, threshold: 0 },
+      { root: null, threshold: +this.getAttribute("data-threshold") || 0 },
     );
   }
 

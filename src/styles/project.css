@@ -58,9 +58,9 @@
 @define-mixin animation-properties $wrapper, $name, $delay {
   animation:
     liquid 20s linear infinite alternate,
-    $wrapper 1000ms linear forwards $delay;
+    $wrapper 500ms linear forwards $delay;
   .project__picture-wrapper {
-    animation: $name 1000ms ease-out forwards $delay;
+    animation: $name 500ms ease-out forwards $delay;
   }
 }
 
@@ -99,14 +99,14 @@
     margin-right: var(--project-detail-margin);
   }
   .already-been-visible {
+    .project__picture--website {
+      @mixin animation-properties object-wrapper, website, 400ms;
+    }
     .project__picture--rocket {
-      @mixin animation-properties object-wrapper--rocket, rocket, 200ms,;
+      @mixin animation-properties object-wrapper--rocket, rocket, 400ms;
     }
     .project__picture--bag {
-      @mixin animation-properties object-wrapper, bag, 100ms;
-    }
-    .project__picture--website {
-      @mixin animation-properties object-wrapper, website, 100ms;
+      @mixin animation-properties object-wrapper, bag, 400ms;
     }
   }
 
@@ -118,7 +118,8 @@
     width: var(--project-picture-size);
     height: var(--project-picture-size);
 
-    margin: var(--project-picture-margin) var(--project-picture-margin) var(--project-picture-margin) calc(var(--project-picture-margin) * 2);
+    margin: var(--project-picture-margin) var(--project-picture-margin)
+      var(--project-picture-margin) calc(var(--project-picture-margin) * 2);
 
     img {
       position: absolute;
