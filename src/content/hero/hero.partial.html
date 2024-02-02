@@ -1,0 +1,52 @@
+<visibility-aware
+  data-selector=".hero"
+  class="is-visible"
+  data-threshold="0.04"
+>
+  <div class="hero--sticky"></div>
+</visibility-aware>
+<div class="hero">
+  <div class="hero__me">
+    <div class="hero__identity">
+      <span class="hero__firstname">Maxence</span>
+      <span class="hero__lastname">Jaouan</span>
+      <div class="hero__job">Software engineer</div>
+    </div>
+    <liquid-circle class="hero__picture"></liquid-circle>
+  </div>
+  <div class="hero__cat">
+    <div class="hero__btn-wrapper--mail">
+      <liquid-button
+        class="hero__btn hero__btn--mail"
+        href="mailto:hello@jaouan.dev"
+        >hello@jaouan.dev</liquid-button
+      >
+    </div>
+    <liquid-button
+      class="hero__btn hero__btn--tiny-mail"
+      x-scroll-to-top
+      data-width="50"
+      data-height="50"
+      ><span>@</span>
+    </liquid-button>
+    <liquid-button
+      class="hero__btn hero__btn--linkedin"
+      href="https://www.linkedin.com/in/maxencejaouan/"
+      data-width="50"
+      data-height="50"
+      ><img
+        width="20"
+        height="20"
+        alt="linkedin"
+        alt="linkedin"
+        src="./linkedin.svg"
+    /></liquid-button>
+    <liquid-button
+      class="hero__btn hero__btn--github"
+      href="https://github.com/Jaouan"
+      data-width="50"
+      data-height="50"
+      ><img width="35" height="35" alt="github" alt="github" src="./github.svg"
+    /></liquid-button>
+  </div>
+</div>

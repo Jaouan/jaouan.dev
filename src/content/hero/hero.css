@@ -1,4 +1,4 @@
-@import "./_glassmorphism.css";
+@import "@/theme/mixins/glassmorphism.mixin.css";
 
 .is-visible {
   .hero--sticky {

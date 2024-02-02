@@ -134,12 +134,12 @@
 
 [data-theme="dark"] {
   --theme-toggle-text: "🌚";
-  
+
   --foreground: var(--dark-foreground);
   --background: var(--dark-background);
   --background-primary: var(--dark-background-primary);
   --sinusoid-color: hsl(160, 41%, 16%);
-  
+
   --hero-picture-background: rgb(0, 45, 52);
 
   --tag-background-color: hsl(160, 41%, 35%);
