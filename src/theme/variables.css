@@ -52,7 +52,7 @@
   --hero-sticky-job-font-size: var(--font-size-sm);
   --hero-sticky-blur: blur(12px);
   --hero-sticky-picture-size: 75px;
-  --hero-sticky-padding: 0px 0px 0px var(--space-xs);
+  --hero-sticky-padding: 0px 0px 0px .6rem;
   --hero-sticky-margin: var(--space-xs);
   --hero-sticky-border-radius: 10rem;
   --hero-sticky-btn-tiny-mail-display: none;

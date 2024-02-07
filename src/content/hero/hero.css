@@ -63,6 +63,7 @@
     align-self: center;
     width: var(--hero-sticky-picture-size);
     height: var(--hero-sticky-picture-size);
+    animation: none;
   }
   .hero__cat {
     flex-wrap: nowrap;
