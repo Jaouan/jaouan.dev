@@ -127,13 +127,13 @@
     }
 
     &.project__picture--rocket {
-      background-color: var(--project-background-color-rocket);
+      background-color: var(--project-background-rocket);
     }
     &.project__picture--bag {
-      background-color: var(--project-background-color-bag);
+      background-color: var(--project-background-bag);
     }
     &.project__picture--website {
-      background-color: var(--project-background-color-website);
+      background-color: var(--project-background-website);
     }
 
     div {
@@ -156,6 +156,7 @@
     font-size: var(--project-sub-font-size);
     font-weight: var(--project-sub-font-weight);
     text-align: var(--project-sub-text-align);
+    opacity: var(--project-sub-opacity);
   }
 
   .tags {
@@ -164,13 +165,15 @@
     justify-content: var(--tags-justify-content);
     padding: 0;
     margin: 0;
+    margin-top: var(--space-xxs);
     li {
       cursor: default;
       display: inline-block;
       padding: var(--tag-padding);
       margin: var(--tag-margin);
       border-radius: var(--tag-border-radius);
-      background-color: var(--tag-background-color);
+      color: var(--tag-color);
+      background-color: var(--tag-background);
       box-shadow: var(--tag-box-shadow);
       font-size: var(--tag-font-size);
       font-weight: var(--tag-font-weight);
@@ -181,10 +184,12 @@
         transform: var(--tag-hover-scale);
       }
       &.tag--role {
-        background-color: var(--tag-role-background-color);
+        color: var(--tag-role-color);
+        background-color: var(--tag-role-background);
       }
       &.tag--csp {
-        background-color: var(--tag-csp-background-color);
+        color: var(--tag-csp-color);
+        background-color: var(--tag-csp-background);
       }
     }
   }

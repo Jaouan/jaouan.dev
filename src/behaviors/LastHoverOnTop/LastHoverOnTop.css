@@ -1,0 +1,7 @@
+.last-hover {
+  z-index: 50;
+}
+
+[x-last-hover-on-top] * > * {
+  pointer-events: none;
+}

@@ -3,9 +3,11 @@
 :root {
   /* Typography */
   --font-family: "Outfit", sans-serif;
+  --font-size-xs: 0.9rem;
   --font-size-s: 1rem;
   --font-size-sm: 1.2rem;
   --font-size-m: 1.4rem;
+  --font-size-ml: 1.6rem;
   --font-size-l: 2rem;
   --font-size-xl: 3rem;
   --font-size-xxl: 4rem;
@@ -13,6 +15,7 @@
   --font-weight-light: 200;
   --font-weight-semibold: 400;
   --font-weight-bold: bold;
+  --h1-font-size: var(--font-size-l);
 
   /* Dimensions */
   --space-xxs: 0.3rem;
@@ -51,16 +54,37 @@
   --hero-sticky-picture-size: 75px;
   --hero-sticky-padding: 0px 0px 0px var(--space-xs);
   --hero-sticky-margin: var(--space-xs);
+  --hero-sticky-border-radius: 10rem;
   --hero-sticky-btn-tiny-mail-display: none;
   --hero-sticky-btn-mail-display: initial;
   --hero-sticky-btn-linkedin-display: initial;
   --hero-sticky-btn-github-display: initial;
   --hero-sticky-fullstack-display: initial;
 
+  /* Skills */
+  --skill-max-width: 600px;
+  --skill-hover-scale: scale(1.5);
+  --skill-hover-blur: blur(12px);
+  --skill-width: 125px;
+  --skill-height: 90px;
+  --skill-picture-size: 60px;
+  --skill-hover-transition: -webkit-backdrop-filter 0.2s ease-in-out,
+    backdrop-filter 0.2s ease-in-out, transform 0.2s ease-in-out;
+  --skill-font-weight: var(--font-weight-light);
+  --skill-kpi-font-weight: var(--font-weight-normal);
+  --skill-kpi-font-size: var(--font-size-xl);
+  --skill-technology-font-size: var(--font-size-s);
+  --skill-technology-font-weight: var(--font-weight-normal);
+  --skill-padding: var(--space-xs) var(--space-xxs) var(--space-xs)
+    var(--space-xxs);
+  --skill-margin: var(--space-xxs);
+  --skills-sinusoid-transform: rotate(45deg);
+  --skill-background: rgba(255, 255, 255, 0.2);
+
   /* Projects */
-  --project-background-color-rocket: rgb(35, 35, 59);
-  --project-background-color-bag: rgb(54, 144, 120);
-  --project-background-color-website: rgb(134, 183, 97);
+  --project-background-rocket: rgb(35, 35, 59);
+  --project-background-bag: rgb(54, 144, 120);
+  --project-background-website: rgb(134, 183, 97);
   --project-align-items: flex-start;
   --project-flex-direction: row;
   --project-even-flex-direction: row-reverse;
@@ -75,41 +99,29 @@
   --project-sub-text-align: start;
   --project-sub-even-text-align: end;
   --project-detail-margin: var(--space-s);
-
-  /* Skills */
-  --skill-hover-scale: scale(1.3);
-  --skill-hover-blur: blur(12px);
-  --skill-width: 170px;
-  --skill-height: 120px;
-  --skill-hover-transition: transform 0.2s ease-in-out;
-  --skill-font-weight: var(--font-weight-light);
-  --skill-kpi-font-weight: var(--font-weight-normal);
-  --skill-kpi-font-size: var(--font-size-xxl);
-  --skill-technology-font-size: var(--font-size-s);
-  --skill-technology-font-weight: var(--font-weight-bold);
-  --skill-padding: var(--space-xs) var(--space-xxs) var(--space-xs)
-    var(--space-xxs);
-  --skill-margin: var(--space-xs);
-  --skills-sinusoid-transform: rotate(45deg);
-  --skill-picture-size: 90px;
+  --project-sub-opacity: 1;
 
   /* Tags */
   --tags-justify-content: flex-start;
   --tags-even-justify-content: flex-end;
   --tag-padding: var(--space-xxs) var(--space-xs);
-  --tag-margin: var(--space-xxs);
+  --tag-margin: calc(var(--space-xxs) /2);
   --tag-border-radius: 1rem;
   --tag-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
-  --tag-font-size: var(--font-size-s);
+  --tag-font-size: var(--font-size-xs);
   --tag-font-weight: var(--font-weight-semibold);
   --tag-transition: transform 0.2s ease-in-out;
-  --tag-hover-scale: scale(1.2);
-  --tag-background-color: #fff;
-  --tag-role-background-color: rgb(171, 255, 210);
-  --tag-csp-background-color: rgb(249, 250, 163);
+  --tag-hover-scale: scale(1.1);
+  --tag-color: #18948b;
+  --tag-background: #fff;
+  --tag-role-color: rgb(60, 97, 78);
+  --tag-role-background: rgb(171, 255, 210);
+  --tag-csp-color: rgb(105, 107, 57);
+  --tag-csp-background: rgb(249, 250, 163);
 
   /* Colors */
-  --light-foreground: #000;
+  --accent: hsl(160, 55%, 59%);
+  --light-color: #000;
   --light-background-primary: #b0c8d8;
   --light-background-secondary: #d3fff3;
   --light-background: linear-gradient(
@@ -117,7 +129,7 @@
     var(--light-background-primary),
     var(--light-background-secondary)
   );
-  --dark-foreground: #fff;
+  --dark-color: #fff;
   --dark-background-primary: #12191e;
   --dark-background-secondary: #0e1f20;
   --dark-background: linear-gradient(
@@ -125,9 +137,10 @@
     var(--dark-background-primary),
     var(--dark-background-secondary)
   );
-  --foreground: var(--light-foreground);
+  --color: var(--light-color);
   --background: var(--light-background);
   --background-primary: var(--light-background-primary);
+  --h1-color: var(--color);
 
   /* Sinusoid */
   --sinusoid-color: #fff;
@@ -144,21 +157,29 @@
 [data-theme="dark"] {
   --theme-toggle-text: "🌚";
 
-  --foreground: var(--dark-foreground);
+  --color: var(--dark-color);
   --background: var(--dark-background);
   --background-primary: var(--dark-background-primary);
   --sinusoid-color: hsl(160, 41%, 16%);
+  --h1-color: var(--accent);
 
   --hero-picture-background: rgb(0, 45, 52);
   --hero-fullstack-background: var(--sinusoid-color);
 
-  --tag-background-color: hsl(160, 41%, 35%);
-  --tag-role-background-color: #914011;
-  --tag-csp-background-color: rgb(19, 93, 133);
+  --skill-background: rgba(255, 255, 255, 0.075);
+
+  --tag-color: hsl(159, 41%, 42%);
+  --tag-background: hsl(159, 46%, 11%);
+  --tag-role-color: hsl(22, 86%, 69%);
+  --tag-role-background: hsl(22, 77%, 27%);
+  --tag-csp-color: hsl(201, 71%, 48%);
+  --tag-csp-background: hsl(202, 75%, 14%);
+
+  --project-sub-opacity: 0.75;
 }
 
 [data-theme="light"] {
-  --foreground: var(--light-foreground);
+  --color: var(--light-color);
   --background: var(--light-background);
   --background-primary: var(--light-background-primary);
 }
@@ -203,9 +224,28 @@
 
 @media (max-width: 550px) {
   :root {
+    --body-padding: var(--space-s) var(--space-xs);
+
     --hero-fullstack-tooltip-display: none;
     --hero-fullstack-background: none;
     --hero-fullstack-cursor: initial;
+
+    --hero-sticky-font-size: var(--font-size-sm);
+
+    --hero-identity-font-size: var(--font-size-l);
+    --hero-job-font-size: var(--font-size-m);
+    --h1-font-size: var(--font-size-m);
+
+    --skill-width: /*95px*/ 110px;
+    --skill-height: 75px;
+    --skill-picture-size: 45px;
+    --skill-margin: var(--space-xxs);
+    --skill-technology-font-size: var(--font-size-xs);
+    --skill-kpi-font-size: var(--font-size-l);
+
+    --project-name-font-size: var(--font-size-ml);
+    --project-name-font-weight: normal;
+    --project-sub-font-size: var(--font-size-sm);
   }
 }
 

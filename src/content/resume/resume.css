@@ -4,7 +4,7 @@
   margin-top: 0;
   a {
     font-size: var(--font-size-xxl);
-    color: var(--foreground);
+    color: var(--color);
     text-decoration: none;
     .link__arrow {
       margin-left: var(--space-xs);

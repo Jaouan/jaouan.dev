@@ -10,9 +10,6 @@ class SinusoidBackground extends HTMLElement {
     const children = Array.from(this.children);
     const [firstChildren] = children;
 
-    const sinWidth = +this.getAttribute("data-sin-width") || 80;
-    const sinHeight = +this.getAttribute("data-sin-height") || 4;
-
     const overlayElement = document.createElement("div");
     overlayElement.classList.add("sinusoid-background__overlay");
 
@@ -38,6 +35,9 @@ class SinusoidBackground extends HTMLElement {
       resizedCallback: (entries) =>
         entries.forEach((entry) => {
           const height = entry.contentRect.height;
+          const sinWidth = +this.getAttribute("data-sin-width") || 80;
+          const sinHeight = +this.getAttribute("data-sin-height") || Math.min(4, Math.max(1, Math.round(height / 100)));
+
           if (
             !this.lastHeight ||
             Math.abs(this.lastHeight / height - 1) > CHANGE_THRESHOLD

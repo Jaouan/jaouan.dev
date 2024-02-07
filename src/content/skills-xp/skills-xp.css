@@ -1,6 +1,9 @@
 @import "@/theme/mixins/glassmorphism.mixin.css";
 
 .skills {
+  margin: auto;
+  max-width: var(--skill-max-width);
+
   .sinusoid-background__sinusoid {
     transform: var(--skills-sinusoid-transform);
   }
@@ -22,6 +25,7 @@
     & > * {
       @mixin glassEffect;
       transition: var(--skill-hover-transition);
+      background: var(--skill-background);
 
       display: flex;
       flex: 1;
@@ -37,7 +41,9 @@
 
       min-width: var(--skill-width);
       max-width: var(--skill-width);
-      height: var(--skill-height);
+      min-height: var(--skill-height);
+
+      font-size: var(--skill-technology-font-size);
 
       img {
         user-select: none;
@@ -49,7 +55,6 @@
         font-weight: var(--skill-kpi-font-weight);
       }
       *:last-child {
-        font-size: var(--skill-technology-font-size);
         font-weight: var(--skill-technology-font-weight);
       }
     }

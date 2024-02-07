@@ -15,7 +15,7 @@
   @mixin glassEffect;
   backdrop-filter: var(--hero-sticky-blur);
   -webkit-backdrop-filter: var(--hero-sticky-blur);
-
+  border-radius: var(--hero-sticky-border-radius);
   position: fixed;
   z-index: 1000;
   left: 0;
