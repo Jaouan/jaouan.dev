@@ -52,7 +52,7 @@
   --hero-sticky-job-font-size: var(--font-size-sm);
   --hero-sticky-blur: blur(12px);
   --hero-sticky-picture-size: 75px;
-  --hero-sticky-padding: 0px 0px 0px .6rem;
+  --hero-sticky-padding: 0px 0px 0px 0.6rem;
   --hero-sticky-margin: var(--space-xs);
   --hero-sticky-border-radius: 10rem;
   --hero-sticky-btn-tiny-mail-display: none;
@@ -84,7 +84,10 @@
   /* Projects */
   --project-background-rocket: rgb(35, 35, 59);
   --project-background-bag: rgb(54, 144, 120);
+  --project-background-data-flow: rgb(130, 67, 124);
   --project-background-website: rgb(134, 183, 97);
+  --project-background-bull: rgb(210, 207, 31);
+  --project-background-lab: rgb(60, 171, 52);
   --project-align-items: flex-start;
   --project-flex-direction: row;
   --project-even-flex-direction: row-reverse;
@@ -100,18 +103,19 @@
   --project-sub-even-text-align: end;
   --project-detail-margin: var(--space-s);
   --project-sub-opacity: 1;
+  --project-external-link-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewbox='0 0 12.2 12.2' width='14' height='14'%3E%3Cpath fill='black' d='M5.7 0v1.5h4L4.5 6.7l1 1.1 5.3-5.2v3.9h1.4V0z'/%3E%3Cpath fill='none' d='M3.4 6.7l3-2.9H1.5v7h7V5.9l-3 2.9z'/%3E%3Cpath fill='black' d='M8.5 5.9v4.9h-7v-7h4.9l1.5-1.6H0v10h10V4.4z'/%3E%3C/svg%3E");
 
   /* Tags */
   --tags-justify-content: flex-start;
   --tags-even-justify-content: flex-end;
   --tag-padding: var(--space-xxs) var(--space-xs);
-  --tag-margin: calc(var(--space-xxs) /2);
+  --tag-margin: calc(var(--space-xxs) / 2);
   --tag-border-radius: 1rem;
   --tag-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
   --tag-font-size: var(--font-size-xs);
   --tag-font-weight: var(--font-weight-semibold);
   --tag-transition: transform 0.2s ease-in-out;
-  --tag-hover-scale: scale(1.1);
+  --tag-hover-scale: scale(1.2);
   --tag-color: #18948b;
   --tag-background: #fff;
   --tag-role-color: rgb(60, 97, 78);
@@ -176,6 +180,7 @@
   --tag-csp-background: hsl(202, 75%, 14%);
 
   --project-sub-opacity: 0.75;
+  --project-external-link-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewbox='0 0 12.2 12.2' width='14' height='14'%3E%3Cpath fill='white' d='M5.7 0v1.5h4L4.5 6.7l1 1.1 5.3-5.2v3.9h1.4V0z'/%3E%3Cpath fill='none' d='M3.4 6.7l3-2.9H1.5v7h7V5.9l-3 2.9z'/%3E%3Cpath fill='white' d='M8.5 5.9v4.9h-7v-7h4.9l1.5-1.6H0v10h10V4.4z'/%3E%3C/svg%3E");
 }
 
 [data-theme="light"] {

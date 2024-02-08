@@ -31,6 +31,40 @@
     transform: scale(1.8) translateX(20px) translateY(15px) rotate(30deg);
   }
 }
+
+@keyframes bull {
+  0% {
+    opacity: 0;
+    transform: scale(0.2) translateX(-20px) translateY(40px) rotate(50deg);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1.5) translateX(50px) translateY(0px) rotate(10deg);
+  }
+}
+
+@keyframes data-flow {
+  0% {
+    opacity: 0;
+    transform: scale(0) translateX(60px) translateY(25px) rotate(-20deg);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1.7) translateX(25px) translateY(5px) rotate(0deg);
+  }
+}
+
+@keyframes lab {
+  0% {
+    opacity: 0;
+    transform: scale(0) translateX(0px) translateY(25px) rotate(-20deg);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1.3) translateX(25px) translateY(-12px) rotate(5deg);
+  }
+}
+
 @keyframes object-wrapper {
   0% {
     overflow: hidden;
@@ -55,6 +89,24 @@
   }
 }
 
+@keyframes object-wrapper--data-flow {
+  0% {
+    overflow: hidden;
+  }
+  100% {
+    overflow: visible;
+  }
+}
+
+@keyframes object-wrapper--lab {
+  0% {
+    overflow: hidden;
+  }
+  100% {
+    overflow: visible;
+  }
+}
+
 @define-mixin animation-properties $wrapper, $name, $delay {
   animation:
     liquid 20s linear infinite alternate,
@@ -69,6 +121,9 @@
   max-width: var(--main-width);
   > *:nth-child(even) {
     flex-direction: var(--project-even-flex-direction);
+    .project__year {
+      text-align: var(--project-name-even-text-align);
+    }
     .project__name {
       text-align: var(--project-name-even-text-align);
     }
@@ -108,6 +163,15 @@
     .project__picture--bag {
       @mixin animation-properties object-wrapper, bag, 200ms;
     }
+    .project__picture--bull {
+      @mixin animation-properties object-wrapper, bull, 200ms;
+    }
+    .project__picture--data-flow {
+      @mixin animation-properties object-wrapper--data-flow, data-flow, 200ms;
+    }
+    .project__picture--lab {
+      @mixin animation-properties object-wrapper--lab, lab, 200ms;
+    }
   }
 
   .project__picture {
@@ -129,11 +193,20 @@
     &.project__picture--rocket {
       background-color: var(--project-background-rocket);
     }
+    &.project__picture--bull {
+      background-color: var(--project-background-bull);
+    }
     &.project__picture--bag {
       background-color: var(--project-background-bag);
     }
     &.project__picture--website {
       background-color: var(--project-background-website);
+    }
+    &.project__picture--data-flow {
+      background-color: var(--project-background-data-flow);
+    }
+    &.project__picture--lab {
+      background-color: var(--project-background-lab);
     }
 
     div {
@@ -142,6 +215,12 @@
         width: 100%;
       }
     }
+  }
+
+  .project__year {
+    display: block;
+    opacity: 0.4;
+    text-align: var(--project-name-text-align);
   }
 
   .project__name {
@@ -192,5 +271,25 @@
         background-color: var(--tag-csp-background);
       }
     }
+  }
+
+  a[href^="http"],
+  a[href^="http"]:hover,
+  a[href^="http"]:focus {
+    color: var(--color);
+    text-decoration: none;
+    padding-right: 1.25em;
+  }
+
+  a[href^="http"]::after {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    margin-left: 0.25em;
+    background-size: 100%;
+    background-image: var(--project-external-link-icon);
+    transform: translateY(0.25em);
   }
 }
