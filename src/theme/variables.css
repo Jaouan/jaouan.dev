@@ -60,16 +60,17 @@
   --hero-sticky-btn-linkedin-display: initial;
   --hero-sticky-btn-github-display: initial;
   --hero-sticky-fullstack-display: initial;
+  --hero-sticky-background: rgba(255, 255, 255, 0.35);
 
   /* Skills */
   --skill-max-width: 600px;
-  --skill-hover-scale: scale(1.5);
+  --skill-hover-scale: scale(1.55);
   --skill-hover-blur: blur(12px);
   --skill-width: 125px;
   --skill-height: 90px;
   --skill-picture-size: 60px;
   --skill-hover-transition: -webkit-backdrop-filter 0.2s ease-in-out,
-    backdrop-filter 0.2s ease-in-out, transform 0.2s ease-in-out;
+    backdrop-filter 0.2s ease-in-out, transform 0.2s ease-in-out, background 0.2s ease-in-out;
   --skill-font-weight: var(--font-weight-light);
   --skill-kpi-font-weight: var(--font-weight-normal);
   --skill-kpi-font-size: var(--font-size-xl);
@@ -80,6 +81,7 @@
   --skill-margin: var(--space-xxs);
   --skills-sinusoid-transform: rotate(45deg);
   --skill-background: rgba(255, 255, 255, 0.2);
+  --skill-hover-background: rgba(255, 255, 255, 0.4);
 
   /* Projects */
   --project-background-rocket: rgb(35, 35, 59);
@@ -147,7 +149,7 @@
   --h1-color: var(--color);
 
   /* Sinusoid */
-  --sinusoid-color: #fff;
+  --sinusoid-color: rgb(255, 255, 255, 0.6);
   --sinusoid-stroke-width: 2rem;
 
   /* Liquid */
@@ -170,7 +172,10 @@
   --hero-picture-background: rgb(0, 45, 52);
   --hero-fullstack-background: var(--sinusoid-color);
 
+  --hero-sticky-background: rgba(255, 255, 255, 0.1);
+
   --skill-background: rgba(255, 255, 255, 0.075);
+  --skill-hover-background: rgba(255, 255, 255, 0.1);
 
   --tag-color: hsl(159, 41%, 42%);
   --tag-background: hsl(159, 46%, 11%);

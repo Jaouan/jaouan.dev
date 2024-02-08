@@ -13,6 +13,7 @@
 
 .hero--sticky {
   @mixin glassEffect;
+  background: var(--hero-sticky-background);
   backdrop-filter: var(--hero-sticky-blur);
   -webkit-backdrop-filter: var(--hero-sticky-blur);
   border-radius: var(--hero-sticky-border-radius);

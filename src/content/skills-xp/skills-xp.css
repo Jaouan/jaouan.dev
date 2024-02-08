@@ -18,6 +18,7 @@
 
     & > *:hover {
       z-index: 1;
+      background: var(--skill-hover-background);
       transform: var(--skill-hover-scale);
       backdrop-filter: var(--skill-hover-blur);
       -webkit-backdrop-filter: var(--skill-hover-blur);
