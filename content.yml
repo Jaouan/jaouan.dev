@@ -1,4 +1,4 @@
-meta-description: Maxence Jaouan is a Fullstack Software engineer. Here his portfolio, resume, and contact. Feel free to reach out to him.
+meta-description: Maxence Jaouan is a FullStack Software engineer. Here his portfolio, resume, and contact. Feel free to reach out to him.
 
 identity:
   firstname: Maxence
@@ -29,7 +29,7 @@ skills:
     - Management
 
 experiences:
-  title: "Experiences"
+  title: Experiences
   defaultUnitOf: years of
   list:
     - kpi: 3
@@ -47,7 +47,7 @@ experiences:
       name: Coding
 
 projects:
-  title: "Some recents projects"
+  title: Some recents projects
   list:
     - id: mfe
       year: "2023 – Present"
@@ -93,7 +93,7 @@ projects:
 
     - id: lab
       year: "2023 – Present"
-      name: "Interactive documentation"
+      name: Interactive documentation
       description: >
         This project involves the development of an educational platform built on Docusaurus,
         tailored to enhance the learning experience through a blend of codelabs and quizzes.
