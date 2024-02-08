@@ -1,2 +1,7 @@
 import { inject } from "@vercel/analytics";
-inject();
+import { injectSpeedInsights } from "@vercel/speed-insights";
+
+if (import.meta.env.PROD) {
+    inject();
+    injectSpeedInsights({ route: document.location.pathname || "/" });
+}
