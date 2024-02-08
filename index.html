@@ -17,23 +17,19 @@
       content="#12191e"
       media="(prefers-color-scheme: dark)"
     />
-    <meta
-      name="description"
-      content="Maxence Jaouan is a Fullstack Software engineer. Here his portfolio, resume, and contact. Feel free to reach out to him."
-    />
-    <title>Maxence Jaouan // FullStack Software Engineer</title>
+    <meta name="description" content="{{meta-description}}" />
+    <title>
+      {{identity.firstname}} {{identity.lastname}} // {{identity.job.sugar}}
+      {{identity.job.name}}
+    </title>
   </head>
   <body>
     <header>
       <theme-toggle></theme-toggle>
-      <!-- inject:hero -->
+      {{$> hero }}
     </header>
 
-    <main>
-      <!-- inject:skills-xp -->
-      <!-- inject:projects -->
-      <!-- inject:resume -->
-    </main>
+    <main>{{$> skills-xp }} {{$> projects }} {{$> resume }}</main>
 
     <script defer type="module" src="/src/main.js"></script>
   </body>

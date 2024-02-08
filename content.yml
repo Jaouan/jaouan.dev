@@ -1,0 +1,176 @@
+meta-description: Maxence Jaouan is a Fullstack Software engineer. Here his portfolio, resume, and contact. Feel free to reach out to him.
+
+identity:
+  firstname: Maxence
+  lastname: Jaouan
+  job:
+    sugar: FullStack
+    sugarTooltip: Definitly not HalfStack 😅
+    name: Software Engineer
+
+contact:
+  github: https://github.com/Jaouan
+  linkedin: https://www.linkedin.com/in/maxencejaouan/
+  mail: hello@jaouan.dev
+
+skills:
+  title: "I'm good at"
+  list:
+    - ReactJS
+    - VanillaJS
+    - NodeJS
+    - GraphQL
+    - Java SpringBoot
+    - Docker
+    - GCP
+    - Architecture
+    - CI/CD & SecOps
+    - Teaching
+    - Management
+
+experiences:
+  title: "Experiences"
+  defaultUnitOf: years of
+  list:
+    - kpi: 3
+      name: LeadDev Front
+    - kpi: 7
+      name: LeadDev Back
+    - kpi: 5
+      name: Architect
+    - kpi: 5
+      name: DevOps
+    - kpi: 3
+      name: Manager
+    - kpi: 99+
+      unitOf: years (approx) of
+      name: Coding
+
+projects:
+  title: "Some recents projects"
+  list:
+    - id: mfe
+      year: "2023 – Present"
+      name: High-traffic MicroFrontEnd
+      description: >
+        Redesign of a high-traffic monolith mfe into a microfrontend architecture.
+        More than 40 developers worked to bring over 80 modules to life.
+      picture: "mfe.webp"
+      tags:
+        - name: Solution Architect
+          type: role
+        - name: LeadDev Front
+          type: role
+        - WebPack Federation
+        - React
+        - Tailwind
+        - Zustand
+        - VanillaJS
+        - name: Google Cloud Platform
+          type: csp
+
+    - id: bff
+      year: "2024 – Present"
+      name: GraphQL Federation as BFF
+      description: >
+        Exposing around twenty business backends through the Backend-For-Frontend (BFF) pattern, this architecture incorporates Circuit Breaker mechanisms for enhanced resilience 
+        and fault tolerance, Command Query Responsibility Segregation (CQRS) for efficient data interaction and separation of concerns, and advanced backpressure management strategies.
+        Utilizing GraphQL Federation technologies, it also facilitates seamless schema stitching and service discovery, enabling dynamic and scalable aggregation of services.
+        Additionally, this setup leverages API Gateway patterns for unified access control and rate limiting, ensuring optimal performance and security across the ecosystem.
+      tags:
+        - name: Architect
+          type: role
+        - name: LeadDev Back
+          type: role
+        - GraphQL
+        - NodeJS
+        - Apollo
+        - Hasura
+        - name: Google Cloud Platform
+          type: csp
+        - name: Kubernetes
+          type: csp
+
+    - id: lab
+      year: "2023 – Present"
+      name: "Interactive documentation"
+      description: >
+        This project involves the development of an educational platform built on Docusaurus,
+        tailored to enhance the learning experience through a blend of codelabs and quizzes.
+        This platform stands out by integrating interactive sections that are synchronized using server-sent events,
+        ensuring a dynamic and engaging user interaction.
+        To support a seamless and secure user experience, the solution Google OAuth for authentication,
+        and Firestore for real-time database management.
+      url: "https://github.com/Jaouan/labosaurus"
+      tags:
+        - name: Personal project
+          type: role
+        - Docusaurus
+        - React
+        - FireStore
+        - Google OAuth
+        - name: Firebase
+          type: csp
+
+    - id: teaching
+      year: "2017 – Present"
+      name: Teaching pleasant students
+      description: >
+        Because teaching is also about learning, I offer courses using
+        my interactive documentation platform on various topics such as development,
+        architecture, and cybersecurity. In case it might accidentally inspire vocations.
+      tags:
+        - name: Teacher
+          type: role
+        - NodeJS
+        - JavaScript
+        - Hardening
+        - Cybersecurity
+        - name: Google Cloud Platform
+          type: csp
+        - name: Amazon Web Services
+          type: csp
+
+    - id: rocket
+      year: "2021 – 2023"
+      name: Modern DevSecOps CI/CD
+      description: >
+        On the opportunity of a massive migration to GitLab-CI for about 150 projects,
+        a versatile and agnostic CI/CD setup was deployed.
+        This setup was designed to be adaptable in building applications across various technologies,
+        including Java, JavaScript, and Nginx, and anything else.
+        Additionally, it maintained independence from specific cloud providers through the adoption of a GitOps approach.
+        The modern pattern used in this project facilitated integration of various third-party solutions,
+        enabling the establishment of quality and security gates.
+      tags:
+        - name: Architect
+          type: role
+        - GitLab-CI
+        - NodeJS
+        - Grype (SCA)
+        - Dependency-Track (SCA)
+        - Contrast Security (IAST)
+        - name: Google Cloud Platform
+          type: csp
+
+    - id: bull
+      year: "2021"
+      name: Crypto trading bot
+      description: >
+        A trading bot leveraging Binance's websocket for live data acquisition.
+        The data undergoes real-time analysis and processing through a stream flow, encompassing change detection networks,
+        forecasting, and signal analysis, to inform decision-making and order execution.
+        Additionally, the bot manages a portfolio and dispatches alerts. (Note: I still don't own a lambo)
+      tags:
+        - name: Personal project
+          type: role
+        - NodeJS
+        - Brain.JS
+        - GraphQL
+        - React
+        - DataDog
+        - name: Firebase
+          type: csp
+
+resume:
+  link: View full resume

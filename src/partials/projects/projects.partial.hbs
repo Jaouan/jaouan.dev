@@ -1,0 +1,48 @@
+<section class="projects">
+  <h1>{{projects.title}}</h1>
+  <sinusoid-background
+    data-height-selector=".projects__content"
+    data-y-offset="400"
+    data-speed="1.1"
+  >
+    <div class="projects__content">
+      {{#each projects.list}}
+        <div>
+          <visibility-aware data-threshold="1">
+            <liquid-circle class="project__picture project__picture--{{id}}">
+              <div class="project__picture-wrapper">
+                <img
+                  width="auto"
+                  height="auto"
+                  src="./{{urlify id}}.webp"
+                  alt="{{id}}"
+                />
+              </div>
+            </liquid-circle>
+          </visibility-aware>
+          <div class="project__detail">
+            <span class="project__year">{{year}}</span>
+            {{#if url}}
+              <span class="project__name"><a
+                  href="{{url}}"
+                  target="_blank"
+                >{{name}}</a></span>
+            {{else}}
+              <span class="project__name">{{name}}</span>
+            {{/if}}
+            <span class="project__sub">{{description}}</span>
+            <ul class="tags" x-last-hover-on-top>
+              {{#each tags}}
+                {{#if type}}
+                  <li class="tag--{{type}}">{{name}}</li>
+                {{else}}
+                  <li>{{this}}</li>
+                {{/if}}
+              {{/each}}
+            </ul>
+          </div>
+        </div>
+      {{/each}}
+    </div>
+  </sinusoid-background>
+</section>

@@ -48,8 +48,8 @@
     flex-wrap: nowrap;
     font-size: var(--hero-sticky-job-font-size);
   }
-  .hero__fullstack {
-    display: var(--hero-sticky-fullstack-display);
+  .hero__sugar {
+    display: var(--hero-sticky-sugar-display);
     background: none;
     padding: 0;
     cursor: initial;
@@ -132,16 +132,16 @@
   font-size: var(--hero-job-font-size);
 }
 
-.hero__fullstack {
-  background: var(--hero-fullstack-background);
-  border-radius: var(--hero-fullstack-border-radius);
-  padding: var(--hero-fullstack-padding);
+.hero__sugar {
+  background: var(--hero-sugar-background);
+  border-radius: var(--hero-sugar-border-radius);
+  padding: var(--hero-sugar-padding);
   &::before {
-    display: var(--hero-fullstack-tooltip-display);
+    display: var(--hero-sugar-tooltip-display);
   }
 }
 [data-tooltip] {
-  cursor: var(--hero-fullstack-cursor);
+  cursor: var(--hero-sugar-cursor);
   position: relative;
   display: inline-block;
 

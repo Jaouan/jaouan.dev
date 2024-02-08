@@ -8,7 +8,7 @@
     transform: scale(0.9) translateX(100px) translateY(20px) rotate(45deg);
   }
 }
-@keyframes bag {
+@keyframes teaching {
   0% {
     opacity: 0;
     transform: scale(0.5) translateX(200px) translateY(150px) rotate(50deg);
@@ -21,7 +21,7 @@
     transform: scale(1.35) translateX(-25px) translateY(-20px) rotate(-30deg);
   }
 }
-@keyframes website {
+@keyframes mfe {
   0% {
     opacity: 0;
     transform: scale(0) translateX(180px) translateY(150px) rotate(100deg);
@@ -43,7 +43,7 @@
   }
 }
 
-@keyframes data-flow {
+@keyframes bff {
   0% {
     opacity: 0;
     transform: scale(0) translateX(60px) translateY(25px) rotate(-20deg);
@@ -89,7 +89,7 @@
   }
 }
 
-@keyframes object-wrapper--data-flow {
+@keyframes object-wrapper--bff {
   0% {
     overflow: hidden;
   }
@@ -154,20 +154,20 @@
     margin-right: var(--project-detail-margin);
   }
   .already-been-visible {
-    .project__picture--website {
-      @mixin animation-properties object-wrapper, website, 200ms;
+    .project__picture--mfe {
+      @mixin animation-properties object-wrapper, mfe, 200ms;
     }
     .project__picture--rocket {
       @mixin animation-properties object-wrapper--rocket, rocket, 200ms;
     }
-    .project__picture--bag {
-      @mixin animation-properties object-wrapper, bag, 200ms;
+    .project__picture--teaching {
+      @mixin animation-properties object-wrapper, teaching, 200ms;
     }
     .project__picture--bull {
       @mixin animation-properties object-wrapper, bull, 200ms;
     }
-    .project__picture--data-flow {
-      @mixin animation-properties object-wrapper--data-flow, data-flow, 200ms;
+    .project__picture--bff {
+      @mixin animation-properties object-wrapper--bff, bff, 200ms;
     }
     .project__picture--lab {
       @mixin animation-properties object-wrapper--lab, lab, 200ms;
@@ -196,14 +196,14 @@
     &.project__picture--bull {
       background-color: var(--project-background-bull);
     }
-    &.project__picture--bag {
-      background-color: var(--project-background-bag);
+    &.project__picture--teaching {
+      background-color: var(--project-background-teaching);
     }
-    &.project__picture--website {
-      background-color: var(--project-background-website);
+    &.project__picture--mfe {
+      background-color: var(--project-background-mfe);
     }
-    &.project__picture--data-flow {
-      background-color: var(--project-background-data-flow);
+    &.project__picture--bff {
+      background-color: var(--project-background-bff);
     }
     &.project__picture--lab {
       background-color: var(--project-background-lab);

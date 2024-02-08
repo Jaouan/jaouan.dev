@@ -1,5 +1,5 @@
 import "./theme";
 import "./behaviors";
 import "./components";
-import "./content";
+import "./partials";
 import "./analytics";

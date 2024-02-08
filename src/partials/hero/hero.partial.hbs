@@ -8,13 +8,14 @@
 <div class="hero">
   <div class="hero__me">
     <div class="hero__identity">
-      <span class="hero__firstname">Maxence</span>
-      <span class="hero__lastname">Jaouan</span>
+      <span class="hero__firstname">{{identity.firstname}}</span>
+      <span class="hero__lastname">{{identity.lastname}}</span>
       <div class="hero__job">
-        <span class="hero__fullstack" data-tooltip="Definitly not HalfStack 😅"
-          >FullStack</span
-        >
-        Software Engineer
+        <span
+          class="hero__sugar"
+          data-tooltip="{{identity.job.sugarTooltip}}"
+        >{{identity.job.sugar}}</span>
+        {{identity.job.name}}
       </div>
     </div>
     <liquid-circle class="hero__picture"></liquid-circle>
@@ -23,35 +24,39 @@
     <div class="hero__btn-wrapper--mail">
       <liquid-button
         class="hero__btn hero__btn--mail"
-        href="mailto:hello@jaouan.dev"
-        >hello@jaouan.dev</liquid-button
-      >
+        href="mailto:{{contact.mail}}"
+      >{{contact.mail}}</liquid-button>
     </div>
     <liquid-button
       class="hero__btn hero__btn--tiny-mail"
       x-scroll-to-top
       data-width="50"
       data-height="50"
-      ><span>@</span>
+    ><span>@</span>
     </liquid-button>
     <liquid-button
       class="hero__btn hero__btn--linkedin"
-      href="https://www.linkedin.com/in/maxencejaouan/"
+      href="{{contact.linkedin}}"
       data-width="50"
       data-height="50"
-      ><img
+    ><img
         width="20"
         height="20"
         alt="linkedin"
         alt="linkedin"
         src="./linkedin.svg"
-    /></liquid-button>
+      /></liquid-button>
     <liquid-button
       class="hero__btn hero__btn--github"
-      href="https://github.com/Jaouan"
+      href="{{contact.github}}"
       data-width="50"
       data-height="50"
-      ><img width="35" height="35" alt="github" alt="github" src="./github.svg"
-    /></liquid-button>
+    ><img
+        width="35"
+        height="35"
+        alt="github"
+        alt="github"
+        src="./github.svg"
+      /></liquid-button>
   </div>
 </div>

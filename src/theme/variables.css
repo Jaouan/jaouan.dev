@@ -36,12 +36,12 @@
   --hero-identity-font-weight: var(--font-weight-bold);
   --hero-job-font-size: var(--font-size-l);
   --hero-job-font-weight: var(--font-weight-light);
-  --hero-fullstack-font-size: var(--font-size-s);
-  --hero-fullstack-background: #ffffff66;
-  --hero-fullstack-padding: 0 var(--space-xxs);
-  --hero-fullstack-border-radius: 5px;
-  --hero-fullstack-tooltip-display: initial;
-  --hero-fullstack-cursor: help;
+  --hero-sugar-font-size: var(--font-size-s);
+  --hero-sugar-background: #ffffff66;
+  --hero-sugar-padding: 0 var(--space-xxs);
+  --hero-sugar-border-radius: 5px;
+  --hero-sugar-tooltip-display: initial;
+  --hero-sugar-cursor: help;
   --hero-btn-icon-offset-y: 5px;
   --hero-btn-linkedin-size: 20px;
   --hero-btn-github-size: 35px;
@@ -59,7 +59,7 @@
   --hero-sticky-btn-mail-display: initial;
   --hero-sticky-btn-linkedin-display: initial;
   --hero-sticky-btn-github-display: initial;
-  --hero-sticky-fullstack-display: initial;
+  --hero-sticky-sugar-display: initial;
   --hero-sticky-background: rgba(255, 255, 255, 0.35);
 
   /* Skills */
@@ -85,9 +85,9 @@
 
   /* Projects */
   --project-background-rocket: rgb(35, 35, 59);
-  --project-background-bag: rgb(54, 144, 120);
-  --project-background-data-flow: rgb(130, 67, 124);
-  --project-background-website: rgb(134, 183, 97);
+  --project-background-teaching: rgb(54, 144, 120);
+  --project-background-bff: rgb(130, 67, 124);
+  --project-background-mfe: rgb(134, 183, 97);
   --project-background-bull: rgb(210, 207, 31);
   --project-background-lab: rgb(60, 171, 52);
   --project-align-items: flex-start;
@@ -170,7 +170,7 @@
   --h1-color: var(--accent);
 
   --hero-picture-background: rgb(0, 45, 52);
-  --hero-fullstack-background: var(--sinusoid-color);
+  --hero-sugar-background: var(--sinusoid-color);
 
   --hero-sticky-background: rgba(255, 255, 255, 0.1);
 
@@ -196,7 +196,7 @@
 
 @media (max-width: 800px) {
   :root {
-    --hero-sticky-fullstack-display: none;
+    --hero-sticky-sugar-display: none;
   }
 }
 
@@ -213,7 +213,7 @@
     --hero-sticky-btn-linkedin-display: none;
     --hero-sticky-btn-github-display: none;
     --hero-sticky-job-font-size: var(--font-size-s);
-    --hero-sticky-fullstack-display: none;
+    --hero-sticky-sugar-display: none;
 
     --skills-sinusoid-transform: rotate(180deg);
 
@@ -236,9 +236,9 @@
   :root {
     --body-padding: var(--space-s) var(--space-xs);
 
-    --hero-fullstack-tooltip-display: none;
-    --hero-fullstack-background: none;
-    --hero-fullstack-cursor: initial;
+    --hero-sugar-tooltip-display: none;
+    --hero-sugar-background: none;
+    --hero-sugar-cursor: initial;
 
     --hero-sticky-font-size: var(--font-size-sm);
 

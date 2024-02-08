@@ -1,0 +1,31 @@
+<section class="skills">
+  <h1>{{skills.title}}</h1>
+  <sinusoid-background data-y-offset="500" data-speed="1.3">
+    <div class="skills__content" x-last-hover-on-top>
+      {{#each skills.list}}
+        <div>
+          <img src="/{{urlify this}}.svg" width="90" height="90" alt="{{this}}" />
+          <span>{{this}}</span>
+        </div>
+      {{/each}}
+    </div>
+  </sinusoid-background>
+</section>
+<section class="skills">
+  <h1>{{experiences.title}}</h1>
+  <sinusoid-background data-y-offset="500" data-speed="1.3">
+    <div class="skills__content" x-last-hover-on-top>
+      {{#each experiences.list}}
+        <div>
+          <span>{{kpi}}</span>
+          {{#if unitOf}}
+            <span>{{unitOf}}</span>
+          {{else}}
+            <span>{{../experiences.defaultUnitOf}}</span>
+          {{/if}}
+          <span>{{name}}</span>
+        </div>
+      {{/each}}
+    </div>
+  </sinusoid-background>
+</section>
