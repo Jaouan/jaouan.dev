@@ -9,7 +9,7 @@
       {{#each projects.list}}
         <div>
           <visibility-aware data-threshold="1">
-            <liquid-circle class="project__picture project__picture--{{id}}">
+            <div class="project__picture project__picture--{{id}}">
               <div class="project__picture-wrapper">
                 <img
                   width="auto"
@@ -18,7 +18,7 @@
                   alt=""
                 />
               </div>
-            </liquid-circle>
+            </div>
           </visibility-aware>
           <div class="project__detail">
             <span class="project__year">{{year}}</span>

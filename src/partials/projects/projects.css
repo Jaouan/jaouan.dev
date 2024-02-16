@@ -108,9 +108,7 @@
 }
 
 @define-mixin animation-properties $wrapper, $name, $delay {
-  animation:
-    liquid 20s linear infinite alternate,
-    $wrapper 500ms linear forwards $delay;
+  animation: $wrapper 500ms linear forwards $delay;
   .project__picture-wrapper {
     animation: $name 500ms ease-out forwards $delay;
   }
@@ -178,6 +176,9 @@
     overflow: hidden;
     user-select: none;
     pointer-events: none;
+
+    border-radius: 50%;
+    box-shadow: var(--liquid-circle-shadow);
 
     width: var(--project-picture-size);
     height: var(--project-picture-size);
