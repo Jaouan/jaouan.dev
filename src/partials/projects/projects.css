@@ -236,6 +236,7 @@
     font-weight: var(--project-sub-font-weight);
     text-align: var(--project-sub-text-align);
     opacity: var(--project-sub-opacity);
+    text-wrap: var(--project-sub-text-wrap);
   }
 
   .tags {

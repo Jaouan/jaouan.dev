@@ -102,6 +102,7 @@
   --project-name-text-align: start;
   --project-name-even-text-align: end;
   --project-sub-text-align: start;
+  --project-sub-text-wrap: balance;
   --project-sub-even-text-align: end;
   --project-detail-margin: var(--space-s);
   --project-sub-opacity: 1;
@@ -123,7 +124,7 @@
   --tag-role-color: #3c614e;
   --tag-role-background: #abffd2;
   --tag-csp-color: #555530;
-  --tag-csp-background: #f9faa3; /* KO */
+  --tag-csp-background: #f9faa3;
 
   /* Colors */
   --accent: hsl(160, 55%, 59%);
@@ -226,6 +227,7 @@
     --project-name-even-text-align: center;
     --project-sub-text-align: justify;
     --project-sub-even-text-align: justify;
+    --project-sub-text-wrap: initial;
 
     --tags-justify-content: center;
     --tags-even-justify-content: center;
